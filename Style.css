@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.wrapping{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 10px;
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-40px) scale(6);
+    
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+ h1{
+    position: absolute;
+    top: 5rem;
+    left: 25%;
+    transform: translateX(-50);
+    letter-spacing: 4px;
+    font-size: 8rem;
+    color: white;
+    text-shadow:10px 0 50px rgba(112, 10, 83, 0.142);
+    font-family:sans-serif;
+ }
+.Heading{
+    font-size: 4rem;
+    padding-left: 4rem;
+    margin: 1.5rem;
+ }
+ 
+ .text{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding:0 5rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+
+ }
+
+ section{
+    background-color: rgb(11, 10, 10);
+    font-family: "poppins", sans-serif;
+    color: white;
+ 
+
+ }
+ .bg{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px; 
+    position: relative;
+    background-position: center;
+ }
+.bg1{
+    background-image: url(sport-1.jpg);
+    
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+    
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+    
+}
+
+.desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+
+}
+.name{
+    background-color: rgb(233, 239, 239);
+    height: 2rem;
+    text-align: center;
+    padding:0 3rem;
+    margin: 1rem 0;
+    font-weight: bold;
+
+
+    
+}
